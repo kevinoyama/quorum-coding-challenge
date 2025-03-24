@@ -27,6 +27,7 @@ flowchart LR
     - List all the bills, the count of supported and opposed votes and its primary sponsor
 
 ### Interface
-- 2 pages:
+- 3 pages:
+    - Home Page
     - Show a table with all legislators and the count of bills he or she supported or opposed
     - Show a table with all the bills, the count of supported and opposed votes and its primary sponsor

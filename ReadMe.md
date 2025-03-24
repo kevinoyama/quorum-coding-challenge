@@ -29,5 +29,22 @@ flowchart LR
 ### Interface
 - 3 pages:
     - Home Page
-    - Show a table with all legislators and the count of bills he or she supported or opposed
-    - Show a table with all the bills, the count of supported and opposed votes and its primary sponsor
+    - Legislator Summary: Show a table with all legislators and the count of bills he or she supported or opposed
+    - Bills Summary: Show a table with all the bills, the count of supported and opposed votes and its primary sponsor
+
+## How to run the web app in dev mode
+
+Requirements:
+- NodeJs Installed
+
+Steps:
+- Open 2 intances of the terminal
+    - Terminal 1 (initiate API)
+        - From the base directory run the following command ```npm i```
+        - Run the following command ```npm run start```
+    - Terminal 2 (initiate frontend)
+        - Go to the client directory by running the following command ```cd ./client```
+        - Run the following command ```npm i```
+        - Run the following command ```npm run dev```
+- Open a browser and access ```http://localhost:5173```
+    

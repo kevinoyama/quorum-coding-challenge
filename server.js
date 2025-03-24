@@ -1,11 +1,20 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const { parseFile } = require('./parser/csv-parser');
 const app = express();
 const port = process.env.PORT;
 
+app.use(cors({
+    origin: 'http://localhost:5173',
+    methods: 'GET,HEAD',
+    credentials: true,
+    optionsSuccessStatus: 204,
+}
+));
+
 app.get('/legislators/votes', async (_, res) => {
-    
+
     const legislators = await parseFile('./data/legislators_(2).csv')
     const voteResults = await parseFile('./data/vote_results_(2).csv')
     const response = [];

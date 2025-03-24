@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Router from "./Router";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-     Hello World
-    </>
+    <div className='flex flex-col min-h-screen'>
+      <Header/>
+      <Router />
+      <Footer/>
+    </div>
   )
 }
 

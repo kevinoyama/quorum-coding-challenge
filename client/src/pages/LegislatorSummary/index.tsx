@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from 'axios';
 import ILegislator from '../../interfaces/ILegislator';
+import BackButton from '../../components/BackButton';
 
 const LegislatorSummary: React.FC = () => {
 
@@ -18,7 +19,8 @@ const LegislatorSummary: React.FC = () => {
 
     return (
         <div className='w-full flex flex-col'>
-            <div className='m-auto w-6xl flex-col'>
+            <div className='m-auto w-6xl flex-col mb-10'>
+                <BackButton/>
                 <h2 className="mb-2 mt-1 flex text-4xl font-medium leading-tight text-primary">
                     Legislators Summary
                 </h2>
@@ -52,6 +54,7 @@ const LegislatorSummary: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <BackButton/>
             </div>
         </div>
     );

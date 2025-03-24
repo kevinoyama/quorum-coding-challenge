@@ -42,8 +42,8 @@ const Home: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Bills Transparency</h2>
-                    <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-                        This website was created with the intent to help the community to track all the bills from the congress and the legislators.
+                    <p className="mt-8 text-lg font-medium text-pretty text-gray-50 sm:text-xl/8">
+                        This website was created with the intent to help the community to track the votes for the bills and legislators from the congress.
                     </p>
                 </div>
                 <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

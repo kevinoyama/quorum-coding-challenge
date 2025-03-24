@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from 'axios'
 import IBill from '../../interfaces/IBill';
+import BackButton from '../../components/BackButton';
 
 const BillsSummary: React.FC = () => {
   const [data, setData] = useState<IBill[]>([]);
@@ -18,6 +19,7 @@ const BillsSummary: React.FC = () => {
     return (
         <div className='w-full flex flex-col'>
             <div className='m-auto w-6xl flex-col'>
+                <BackButton/>
                 <h2 className="mb-2 mt-1 flex text-4xl font-medium leading-tight text-primary">
                     Bills Summary
                 </h2>
@@ -53,6 +55,7 @@ const BillsSummary: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <BackButton/>
             </div>
         </div>)
 }

@@ -3,7 +3,7 @@
 This is a Web Application allow users to check and review information about bills and who have supported them.
 
 ## Technologies
-- Back end: TypeScript using Express
+- Back end: NodeJs using Express
 - Front end: ReactJs, Vite and TypeScript
 
 ## Sytem Design notes

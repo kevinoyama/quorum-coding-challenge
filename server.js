@@ -56,7 +56,7 @@ app.get('/bills', async (_, res) => {
 
         response.push({
             id: bill.id,
-            name: bill.name,
+            name: bill.title,
             primarySponsor: primarySponsor?.name ?? 'not found',
             supportersCount: filteredVoteResults.reduce((acc, curr) => curr.vote_type == '1' ? acc + 1 : acc, 0),
             OpposersCount: filteredVoteResults.reduce((acc, curr) => curr.vote_type == '2' ? acc + 1 : acc, 0)
